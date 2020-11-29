@@ -1,0 +1,135 @@
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+:root {
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+}
+
+body {
+
+    font-family:'Kumbh Sans', sans-serif;
+    color: var(--Very-dark-desaturated-blue);
+    background-color: var(--Dark-cyan);
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: left 140% top 270%, left -25% bottom 300%;
+    
+}
+
+h2 {
+
+    font-size: 20px;
+
+}
+
+.card___age, .card___country, .stats {
+
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    font-size: 1.1em;
+
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.card {
+
+    border-radius: 20px;
+    background-color: #ffffff;
+    text-align: center;
+
+}
+
+.card___card-top {
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.card___card-info {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid hsl(0, 0%, 90%);
+
+}
+
+.card___card-image, .card___card-image img {
+
+    border-radius: 100px;
+
+}
+
+.card___card-image img {
+
+    border-radius: 100px;
+    margin-top: -60px;
+    margin-left: 10px;
+    /* position: absolute; */
+    border: 5px solid #ffffff;
+
+}
+
+.card___card-name {
+
+    font-weight: 400;
+
+}
+
+.card___card-stats {
+
+    margin: 30px 30px 30px 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+
+footer {
+
+    bottom: 10px;
+    position: absolute;
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 800px) {
+
+    body {
+        
+        background-color: var(--Dark-cyan);
+        background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+        background-repeat: no-repeat;
+        background-position: left -90% top 160%, left 175% bottom 200%;
+        
+    }
+
+    .card___card-info {
+
+        border-bottom: 2px solid hsl(0, 0%, 80%);
+    
+    }
+
+}
